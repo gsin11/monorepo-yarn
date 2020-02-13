@@ -1,3 +1,0 @@
-68892e286c1fc9d9ad3b7a295e414e33
-exports.parse = require('./lib/parse');
-exports.stringify = require('./lib/stringify');
