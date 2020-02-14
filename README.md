@@ -13,15 +13,11 @@ packages/
 |    |-- src/
 |    |-- package.json
 apps/
-|--- app-1/
+|--- app1/
 |    |-- src/
 |    |-- package.json
-|--- app-2/
-     |-- src/
-     |-- package.json
 package.json
 lerna.json
-babel.config.js
 </pre>
 
 ## Commands
@@ -32,5 +28,5 @@ $ npm install -g lerna  // Install lerna as global dependency
 ```
 $ yarn install        // Install all the dependencies
 $ yarn run bootstrap  // Bootstrap your package dependencies
-$ yarn run storybook  // Run storybook on port=5555
+$ yarn run app1       // This will run first app1 on your local machine -port:3000
 ```
