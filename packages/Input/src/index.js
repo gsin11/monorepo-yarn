@@ -1,12 +1,5 @@
-import styled from 'styled-components';
+import React from 'react';
 
-const Input = styled.input`
-  background: #fff;
-  color: #000;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 9px 36px;
-`;
+const Input = () => <input type="text" name="txt" />
 
 export default Input;
