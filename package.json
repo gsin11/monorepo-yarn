@@ -10,6 +10,7 @@
     "node": "^11.0.0"
   },
   "devDependencies": {
+    "@bradfordlemley/react-scripts": "^2.1.101",
     "lerna": "^3.20.2"
   },
   "scripts": {
