@@ -21,13 +21,17 @@ package.json
 lerna.json
 </pre>
 
-## Commands
+## Prerequisites
+- Node version 11 or above [Install](https://nodejs.org/en/download/)
+- Yarn ([Install](https://classic.yarnpkg.com/en/docs/install))
+
+### Installation Commands
 ```
 $ npm install -g lerna  // Install lerna as global dependency
-```
-### Application
-```
 $ yarn install        // Install all the dependencies
+```
+### Run your Application
+```
 $ yarn run bootstrap  // Bootstrap your package dependencies
 $ yarn run app1       // This will run first app1 on your local machine -port:3000
 $ yarn run build:app1 // Build your application, build files will be available under ./apps/app1/build/
