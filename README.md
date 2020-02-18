@@ -1,7 +1,7 @@
 # monorepo-yarn
 React based Monorepo using yarn Integrated with storybook
 
-[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) ![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)
 
 ## Structure
 <pre>
@@ -31,4 +31,5 @@ $ yarn install        // Install all the dependencies
 $ yarn run bootstrap  // Bootstrap your package dependencies
 $ yarn run app1       // This will run first app1 on your local machine -port:3000
 $ yarn run build:app1 // Build your application, build files will be available under ./apps/app1/build/
+$ yarn run storybook  // Run storybook on port 5555
 ```
