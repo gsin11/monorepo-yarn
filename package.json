@@ -11,12 +11,16 @@
   },
   "devDependencies": {
     "@bradfordlemley/react-scripts": "^2.1.101",
+    "@storybook/react": "^5.3.13",
     "lerna": "^3.20.2"
   },
   "scripts": {
     "app1": "cd apps/app1 && yarn start",
     "build:app1": "cd apps/app1 && yarn build",
+    "storybook": "start-storybook -p 5555",
     "bootstrap": "lerna bootstrap --use-workspaces"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-preset-react-app": "^9.1.1"
+  }
 }
