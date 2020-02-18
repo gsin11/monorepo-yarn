@@ -15,6 +15,7 @@
   },
   "scripts": {
     "app1": "cd apps/app1 && yarn start",
+    "build:app1": "cd apps/app1 && yarn build",
     "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "dependencies": {}

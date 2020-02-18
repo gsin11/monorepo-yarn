@@ -6,16 +6,17 @@ React based Monorepo using yarn Integrated with storybook
 ## Structure
 <pre>
 packages/
-|--- comp-1/
-|    |-- src/
-|    |-- package.json
-|--- comp-2/
-|    |-- src/
-|    |-- package.json
+|--- core/
+|------ Button/
+|--------- input.js
+|------ Input/
+|--------- input.js
+|------ package.json
+|------ index.js
 apps/
 |--- app1/
-|    |-- src/
-|    |-- package.json
+|------ src/
+|------ package.json
 package.json
 lerna.json
 </pre>
@@ -29,4 +30,5 @@ $ npm install -g lerna  // Install lerna as global dependency
 $ yarn install        // Install all the dependencies
 $ yarn run bootstrap  // Bootstrap your package dependencies
 $ yarn run app1       // This will run first app1 on your local machine -port:3000
+$ yarn run build:app1 // Build your application, build files will be available under ./apps/app1/build/
 ```
