@@ -1,39 +1,26 @@
 {
   "name": "root",
   "private": true,
+  "main": "index.js",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "engines": {
     "node": "^11.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "@storybook/react": "^5.3.12",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^25.1.0",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-styled-components": "^1.10.7",
-    "jest": "^25.1.0",
-    "jest-haste-map": "^25.1.0",
-    "jest-resolve": "^25.1.0",
-    "jest-styled-components": "^7.0.0",
-    "lerna": "^3.20.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-test-renderer": "^16.12.0",
-    "styled-components": "^5.0.1",
-    "webpack": "^4.41.5"
+    "@bradfordlemley/react-scripts": "^2.1.101",
+    "@storybook/react": "^5.3.13",
+    "lerna": "^3.20.2"
   },
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
-    "bootstrap": "lerna bootstrap --use-workspaces",
-    "dev": "start-storybook -p 5555",
-    "coverage": "jest --coverage",
-    "unit": "jest",
-    "start": "lerna run start"
+    "app1": "cd apps/app1 && yarn start",
+    "build:app1": "cd apps/app1 && yarn build",
+    "storybook": "start-storybook -p 5555",
+    "bootstrap": "lerna bootstrap --use-workspaces"
+  },
+  "dependencies": {
+    "babel-preset-react-app": "^9.1.1"
   }
 }

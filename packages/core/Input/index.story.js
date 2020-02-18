@@ -3,4 +3,4 @@ import { storiesOf } from '@storybook/react';
 
 import Input from '.';
 
-storiesOf('Input', module).add('default', () => <Input type="text" name="name" />);
+storiesOf('Input', module).add('default', () => <Input />);
