@@ -1,27 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Button } from 'core';
+import logoRedux from './logo-redux.svg';
 import './App.css';
+import { Provider as ReduxProvider } from 'react-redux';
+import CounterContainer from './containers/counter';
+import store from './store';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button />
-      </header>
-    </div>
+    <ReduxProvider store={store}>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="react logo" />
+          <img src={logoRedux} className="App-logo" alt="redux logo" />
+        </header>
+        <main>
+          <CounterContainer />
+        </main>
+      </div>
+    </ReduxProvider>
   );
 }
 

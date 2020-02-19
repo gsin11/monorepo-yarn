@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "button": "^1.0.0",
+    "core": "^1.0.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,7 +22,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@bradfordlemley/react-scripts": "^2.0.402"
+    "@bradfordlemley/react-scripts": "^2.0.402",
+    "redux-devtools-extension": "^2.13.8"
   },
   "browserslist": {
     "production": [
