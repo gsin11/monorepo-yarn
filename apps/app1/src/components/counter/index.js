@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'core';
+import Button from 'atoms/Button';
 
 const Component = ({ data, handleIncrementClick, handleDecrementClick }) => {
   return (
