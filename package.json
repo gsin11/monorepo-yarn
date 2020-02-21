@@ -3,12 +3,9 @@
   "private": true,
   "main": "index.js",
   "workspaces": [
-    "packages/*",
+    "packages/**/*",
     "apps/*"
   ],
-  "engines": {
-    "node": "^11.0.0"
-  },
   "devDependencies": {
     "@bradfordlemley/react-scripts": "^2.1.101",
     "@storybook/react": "^5.3.13",
@@ -16,7 +13,9 @@
   },
   "scripts": {
     "app1": "cd apps/app1 && yarn start",
+    "app2": "cd apps/app2 && yarn start",
     "build:app1": "cd apps/app1 && yarn build",
+    "build:app2": "cd apps/app2 && yarn build",
     "storybook": "start-storybook -p 5555",
     "bootstrap": "lerna bootstrap --use-workspaces"
   },
